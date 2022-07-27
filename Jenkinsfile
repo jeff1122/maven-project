@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('step1'){
 			steps{
-				mvn clean package
+				cmd /c mvn clean package
 			}
 			post{
 				success{
