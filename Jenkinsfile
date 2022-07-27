@@ -3,7 +3,7 @@ pipeline{
 	stages{
 		stage('step1'){
 			steps{
-				"cmd /c mvn clean package  %$PATH% "
+				 bat '''  mvn clean package ''' 
 			}
 			post{
 				success{
